@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise One</title>
+
+    <link rel="stylesheet" href="style.css"/>
+
+    
+</head>
+<body>
+
+   <header>
+    <nav>
+        <ul>
+            <li><a href="#box-model">Box Model</a></li>
+            <li> <a href="#flexbox">Flexbox</a></li>
+            <li><a href="#positioning-elements">Positioning Elements</a></li>
+            <li><a href="#heading-usage">Heading Usage</a></li>
+            <li><a href="#simple-javascript">Simple JavaScript</a></li>
+        </ul>
+       
+    </nav>
+   </header> <!-- Navigation -->
+    
+
+    <!-- CSS Box Model -->
+    <section id= "box-model" class="box-model-section">
+            <div class="box-model-wrapper">
+                <h2>CSS Box Model</h2>
+                <p>/* Padding is inside of the element in CSS */</br>
+                <code>padding: 40px;</code></br>
+                /* Margin is outside of the element in CSS */</br>
+                <code>margin: 40px; (outside)</code></br>
+                /* Border is added to width and height of element in CSS */</br>
+                <code>border: 10px solid green;</code>
+                </p>
+            </div>
+        
+    </section>
+
+    <!-- Flexbox -->
+    <section id="flexbox" class="flexbox-section">
+        <div class="flexbox-wrapper">
+            <div class="flexbox-title flexbox-element">  
+                <div>
+                    <h2>Display: Flex</h2>
+                </div>
+            </div>
+          
+            <div class="flexbox-bottom">
+
+                <div class="flexbox-left flexbox-element">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="flexbox-right flexbox-element">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Positioning Elements -->
+    <section id="positioning-elements" class="positioning-section">
+        <div class="positioning-wrapper">
+            <h2>Positioning<br/>Elements</h2>
+            <div class="circle1" style="left: 48px; bottom: 10px;"></div>
+            <div class="circle2" style="right: 10px; top: 10px;"></div>
+            <div class="circle3" style="right: 150px; bottom: 60px;"></div>
+            <div class="square1" style="right: 500px; bottom: 150px;"></div>
+            <div class="square2" style="right: 100px; top: 320px;"></div>
+            
+        </div>
+        
+    </section>
+
+    <!-- Headings -->
+    <section id="heading-usage" class="heading-section">
+        <div class="heading-wrapper">
+        <h1>Proper Heading Usage (h1)</h1>
+        <h2>A heading describes the content below it (h2)</h2>
+        <h3>Style of the text is not relevant (h3)</h3>
+        <p>Here is a paragraph about why text-size does not affect the order of the headings...</p>
+        <h4>This could be another heading about text size (h4)</h4>
+        <p>And you could put another paragraph...</p>
+    </div>
+    </section>
+
+    <!-- Simple JavaScript -->
+    <section id="simple-javascript" class="simple-javascript-section">
+        <div class="simple-javascript-wrapper">
+        <h2>Simple JavaScript</h2>
+
+        <div class="counter-button-wrapper">
+        
+            <p id="counter">0</p>
+
+            <div id="button">
+             <button onclick="increaseCounterValue()">Click to Increase</button>
+            </div>
+        
+        </div>
+        
+        
+        <script>
+            let counterValue = 0;
+            function increaseCounterValue() {
+                counterValue++;
+                const counterDiv = document.querySelector("#counter");
+                counterDiv.innerHTML= counterValue;
+            }
+        </script>
+
+        </div>
+
+    </section>
+
+</body>
+<footer>
+    <div class="footer-wrapper">
+    <p>Robin - Fall 2024</p>
+</div>
+</footer>
+</html>
